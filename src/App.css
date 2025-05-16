@@ -1,38 +1,79 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  font-size: 30px;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  max-width: 420px;
+  background: rgba(0, 0, 0, 0.336);
+  color: white;
+  margin: 0 auto;
+}
+
+label button {
+  background: gray;
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  color: #161717b2;
+  font-size: 18px;
+  border: none;
+}
+
+
+.title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.178);
+  width: 420px;
+  gap: 70px;
+  font-size: 20px;
+  height: 40px;
+  color: #171616;
+  margin: 0 auto;
+}
+
+.title button{
+  border: none;
+  height: 30px;
+  background: gray;
+  color: rgba(65, 65, 65, 0.616);
+}
+form {
+  display: flex;
+  margin-top: 200px;
+  gap: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+form input {
+  width: 300px;
+  height: 40px;
+  padding-left: 20px;
+  border: none;
+  background: #00000093;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+form input::placeholder {
+  color: rgba(255, 255, 255, 0.651);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form button {
+  width: 80px;
+  height: 40px;
+  border: none;
+  background: #00000094;
+  color: gray;
+  box-shadow: 0px 0px 2px 1px rgba(255, 255, 255, 0.226);
+}
+
+body {
+  background: #161717;
 }
